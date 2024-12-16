@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>Ain's Portfolio</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<!-- Main css -->
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
+
+<script>
+    // Simple function to handle form submission
+    function handleSubmit(event) {
+        event.preventDefault(); // Prevent actual form submission
+        const messageDiv = document.getElementById("formMessage");
+        messageDiv.textContent = "Message successfully sent!";
+        messageDiv.style.color = "green";
+        messageDiv.style.marginTop = "20px";
+        messageDiv.style.fontWeight = "bold";
+    }
+</script>
+
+</head>
+<body>
+
+<!-- PRE LOADER -->
+
+<div class="preloader">
+     <div class="sk-spinner sk-spinner-wordpress">
+          <span class="sk-inner-circle"></span>
+     </div>
+</div>
+
+<!-- Navigation section -->
+
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+     <div class="container">
+          <div class="navbar-header">
+               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+               </button>
+             <p class="col-md-6"> 
+    <span class="navbar-brand">Yin's Portfolio</span>
+</p>
+<img src="images/ain4.jpg" class="img-circle img-responsive" alt="blog" style="width: 65px; height: 70px;">
+
+          </div>
+        <div class="collapse navbar-collapse">
+               <ul class="nav navbar-nav navbar-right">
+                   	<li><a href="index.html">Homepage</a></li>
+                    <li><a href="Biodata.html">Biodata</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="Video.html">Video</a></li>
+				    <li class="active"><a href="Comment.html">Comment</a></li>
+               </ul>
+          </div>
+
+  </div>
+</div>
+
+<!-- Home Section -->
+
+<section id="home" class="main-contact parallax-section">
+     <div class="overlay"></div>
+     <div class="container">
+          <div class="row">
+               <div class="col-md-12 col-sm-12">
+                    <h1>Comment</h1>
+               </div>
+          </div>
+     </div>
+</section>
+
+<!-- Contact Section -->
+
+<section id="contact">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-offset-1 col-md-10 col-sm-12">
+                    <h2>Stay Connected ...</h2>
+                    <p>Whether you’re a random visitor or someone with fresh ideas and inspiration to share, I’d love to connect with you! Your thoughts, feedback, and suggestions are always welcome. I’m just a message away, so don’t hesitate to reach out. I’m excited to hear from you and keep the conversation going. Let’s exchange our experiences together!</p>
+
+                    <!-- Simple form with JavaScript -->
+                    <form id="contactForm" onsubmit="handleSubmit(event)">
+                         <div class="col-md-4 col-sm-4">
+                              <input name="name" type="text" class="form-control" id="name" placeholder="Name" required>
+                         </div>
+                         <div class="col-md-4 col-sm-4">
+                              <input name="email" type="email" class="form-control" id="email" placeholder="Email" required>
+                      	 </div>
+                         <div class="col-md-4 col-sm-4">
+                              <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" required>
+                      	 </div>
+                         <div class="col-md-12 col-sm-12">
+                              <textarea name="message" rows="5" class="form-control" id="message" placeholder="Message" required></textarea>
+                         </div>
+                         <div class="col-md-3 col-sm-6">
+                              <input name="submit" type="submit" class="form-control" id="submit" value="Send">
+                         </div>
+                         <div id="formMessage"></div> <!-- This will show the success message -->
+                    </form>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+<!-- Footer Section -->
+
+<footer>
+     <div class="container">
+          <div class="row">
+               <div class="col-md-5 col-md-offset-1 col-sm-6">
+                    <h3>Yin's Portfolio&nbsp;</h3>
+                    <p>I appreciate your support and look forward to sharing more with you!</p>
+               </div>
+               <div class="col-md-4 col-md-offset-1 col-sm-6">
+                    <h3>Reach Me&nbsp;</h3>
+                    <p><i class="fa fa-globe"></i> 512 Layangan Street, San Labuan, CA 10880</p>
+                    <p><i class="fa fa-phone"></i> 010-020-0990</p>
+                    <p><i class="fa fa-save"></i> &nbsp;yin@blogger.com</p>
+               </div>
+               <div class="clearfix col-md-12 col-sm-12">
+                    <hr>
+               </div>
+          </div>
+     </div>
+</footer>
+
+<!-- Back top -->
+<a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+<!-- SCRIPTS -->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>
+
